@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include "string.h"
-#include "../ownLibraries/screenSystemShow.h"
+#include "../ownLibC/screenSystemShow.h"
 
 #define LIMPIARPANTALLA "clear" // "cls" para windows | "clear" para linux
 
