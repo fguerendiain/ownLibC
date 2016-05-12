@@ -11,4 +11,6 @@ void cleanScreen(); /**< Limpia la pantalla */
 
 int stringSetCase(char *stringToConvert,int option);  /**< convierte una cadena de carateres en mayuscula, minuscula o capital */
 
+void swapVariables(void *pointer1, void *pointer2, int size);    /**< Permite swapear dos punteros a void */
+
 #endif //__SCREENSYSTEMSHOW

@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include "string.h"
+
 #include "../ownLibC/screenSystemShow.h"
 
 #define LIMPIARPANTALLA "clear" // "cls" para windows | "clear" para linux
@@ -86,4 +87,19 @@ int stringSetCase(char *stringToConvert,int option)
         }
     }
     return ret;
+}
+
+/** \brief Permite swapear dos punteros a void
+ *
+ * \param (pointer1) puntero1 a swapear
+ * \param (pointer2) puntero2 a swapear
+ *
+ */
+
+void swapVariables(void *pointer1, void *pointer2, int size)
+{
+    void *buf = malloc(size);
+    memcpy(buf,pointer1,size);
+    memcpy(pointer1, pointer2,size);
+    memcpy(pointer2,buf,size);
 }
